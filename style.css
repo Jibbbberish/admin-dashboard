@@ -22,7 +22,7 @@ html, body {
 
 .container {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -36,8 +36,34 @@ html, body {
     height: 2rem;
 }
 
+.searchIcons {
+    width: 2rem;
+    height: 2rem;
+}
+
+#search {
+    width: 22rem;
+    height: 1rem;
+    flex: 1;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    grid-column: 1 / -1;
+}
+
 header {
     background-color: grey;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 5fr 4fr 4fr;
+    padding: 20px 40px;
+}
+
+.buttons {
+    grid-column: -2 / -1;
 }
 
 .main {
